@@ -21,16 +21,16 @@ You need to chagne the first section of index.php and configure the variables wi
 ```
 // aws region to be used
 $region = 'eu-central-1';
-// cognito provider name == issuer URL cognito-idp.[region].amazonaws.com/[userPoolId]
-$providerName = 'cognito-idp.eu-central-1.amazonaws.com/eu-central-XXXXXXXXXXX';
 // cognito user login (username, id or email)
 $userName = 'testuser';
 // cognito password
-$userPassword = 'XXXXXXXXXXXXXX';
+$userPassword = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+// user pool id
+$userPoolId = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 // user pool app client id 
-$appClientId = 'XXXXXXXXXXXXXX';
+$appClientId = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 // cognito identity pool id 
-$identityPoolId = 'eu-central-1:XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+$identityPoolId = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 ```
 
 ## Running the example
@@ -39,7 +39,6 @@ Go to your webroot and call the index.php. The sample code will authenticate via
 
 To verify the connection a S3 client is beeing created with the credentials and a testcall is made to the S3 api via the PHP SDK. 
 
-## License
+## License Summary
 
-This sample application is distributed under the
-[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+This sample code is made available under the [MIT-0 license](https://github.com/aws/mit-0). See the LICENSE file.

@@ -8,16 +8,18 @@ use Aws\CognitoIdentity\CognitoIdentityClient;
 
 // aws region to be used
 $region = 'eu-central-1';
-// cognito provider name == issuer URL cognito-idp.[region].amazonaws.com/[userPoolId]
-$providerName = 'cognito-idp.eu-central-1.amazonaws.com/eu-central-XXXXXXXXXXX';
 // cognito user login (username, id or email)
 $userName = 'testuser';
 // cognito password
-$userPassword = 'XXXXXXXXXXXXXX';
+$userPassword = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+// user pool id
+$userPoolId = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 // user pool app client id 
-$appClientId = 'XXXXXXXXXXXXXX';
+$appClientId = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 // cognito identity pool id 
-$identityPoolId = 'eu-central-1:XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+$identityPoolId = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+// cognito provider name == issuer URL cognito-idp.[region].amazonaws.com/[userPoolId]
+$providerName = 'cognito-idp.' . $region .'.amazonaws.com/' . $userPoolId;
 
 // create a new cognito client without credentials
 $cognitoClient = new CognitoIdentityProviderClient([
