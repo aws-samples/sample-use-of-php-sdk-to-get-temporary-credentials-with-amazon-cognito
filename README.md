@@ -33,11 +33,22 @@ $appClientId = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 $identityPoolId = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 ```
 
+> **DO NOT STORE USERNAME, PASSWORD OR ANY OTHER LOGIN CREDENTIALS INSIDE YOUR CODE** 
+
+This is just an example to demonstrate the usage of sdk methods in php. Follow our security best practises: 
+https://aws.amazon.com/architecture/security-identity-compliance/ 
+https://aws.amazon.com/secrets-manager/ 
+
+
 ## Running the example
 
 Go to your webroot and call the index.php. The sample code will authenticate via the cognito api and get a api token. With that token it will then recieve temporary credentials from the identity pool. 
 
 To verify the connection a S3 client is beeing created with the credentials and a testcall is made to the S3 api via the PHP SDK. 
+
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
 
 ## License Summary
 

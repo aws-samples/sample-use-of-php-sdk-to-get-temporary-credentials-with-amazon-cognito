@@ -6,6 +6,16 @@ use Aws\S3\S3Client;
 use Aws\Credentials\Credentials;
 use Aws\CognitoIdentity\CognitoIdentityClient;
 
+/*
+===
+!! DO NOT STORE USERNAME, PASSWORD OR ANY OTHER LOGIN CREDENTIALS INSIDE YOUR CODE !!
+===
+This is just an example to demonstrate the usage of sdk methods in php.  
+Use AWS Secrets Manager or follow our security best practises:
+https://aws.amazon.com/secrets-manager/
+https://aws.amazon.com/architecture/security-identity-compliance/
+*/
+
 // aws region to be used
 $region = 'eu-central-1';
 // cognito user login (username, id or email)
