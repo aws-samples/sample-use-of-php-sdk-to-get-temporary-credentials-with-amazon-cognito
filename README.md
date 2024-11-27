@@ -1,4 +1,4 @@
-# PHP cognito credentials sample
+# Sample use of PHP SDK to get temporary credentials with Amazon Cognito 
 
 This code example shows how to retrieve temporary credentials from the Cognito service API, using the PHP SDK.
 
